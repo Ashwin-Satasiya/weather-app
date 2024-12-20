@@ -16,7 +16,7 @@ export const WeatherContextProvider = ({ children }) => {
     try {
       setIsLoadion(true);
       const response = await axios.get(
-        `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${"6144a3853018590805fad0c74d991a43"}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${"6144a3853018590805fad0c74d991a43"}`
       );
 
       setWeatherData(response.data);
